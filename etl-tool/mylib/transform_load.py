@@ -5,7 +5,7 @@ import sqlite3
 import csv
 import os
 
-def load(dataset="my_tool/data/WorldSmall.csv"):
+def load(dataset="etl-tool/data/WorldSmall.csv"):
     """Transforms and Loads data into the local SQLite3 database"""
 
     # Imprime el directorio de trabajo actual y la ruta completa
@@ -14,7 +14,7 @@ def load(dataset="my_tool/data/WorldSmall.csv"):
     with open(dataset, 'r', encoding='utf-8', newline='') as file:
         payload = csv.reader(file, delimiter=',')
 
-        db_path = "my_tool/data/WorldSmallDB.db"
+        db_path = "etl-tool/data/WorldSmallDB.db"
         conn = sqlite3.connect(db_path)
         c = conn.cursor()
 

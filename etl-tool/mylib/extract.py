@@ -6,7 +6,7 @@ import os
 import requests
 
 def extract(url="https://raw.githubusercontent.com/nickeubank/practicaldatascience/master/Example_Data/world-small.csv", 
-            file_path="my_tool/data/WorldSmall.csv"):
+            file_path="etl-tool/data/WorldSmall.csv"):
     """Extract a URL to a file path"""
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
