@@ -23,7 +23,7 @@ def load(dataset="data/WorldSmall.csv"):
         data = list(payload)  
         
 
-        for idx, row in enumerate(data):
+        for _, row in enumerate(data):
             country = row[0]
             region = row[1]
             gdppcap08 = row[2]
