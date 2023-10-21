@@ -1,25 +1,20 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='EtlTool',  # Nombre de tu proyecto
-    version='1.0',  # Versión de tu proyecto
-    packages=find_packages(),  # Encuentra automáticamente todos los paquetes en tu proyecto
-    install_requires=[
-        # Lista de dependencias de tu proyecto
-        # Por ejemplo:
-        'numpy',
-        'pandas',
-        'sqlite3',
-        'requests',
-        'prettytable',
-    ],
+    name="EtlTool",
+    version="0.1",
+    packages=find_packages(),
     entry_points={
-        'console_scripts': [
-            'etltool = EtlTool.main:main',  # Define un punto de entrada para tu programa principal
+        "console_scripts": [
+            "etl-tool = EtlTool.main:main",
         ],
     },
-    author='Barbara Flores',
-    author_email='bpf17@duke.edu',
-    description='An ETL (Extract, Transform, Load) tool written in Python',
-    url='https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject7',  # URL de tu repositorio en GitHub
+    install_requires=[
+        "requests",
+        "sqlite3",
+        "prettytable",
+    ],
+    author="Barbara Flores",
+    author_email="bpf17@duke.edu",
+    description="Herramienta de ETL",
 )
