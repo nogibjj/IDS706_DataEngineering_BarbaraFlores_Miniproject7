@@ -19,7 +19,7 @@ def update_region_column(cursor):
     print("\nColumn 'region' updated successfully.")
 
 def query():
-    db_path = "my_tool/data/WorldSmallDB.db"
+    db_path = "etl-tool/data/WorldSmallDB.db"
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
