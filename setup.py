@@ -1,15 +1,15 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='my_tool',
+    name='your-package-name',
     version='0.1',
-    packages=['my_tool'],
+    packages=['your_package'],
     install_requires=[
-        # Lista de tus dependencias aquí
+        # List your dependencies here
     ],
     entry_points={
         'console_scripts': [
-            'my-tool = my_tool.mi_script:main',
+            'your-command-name = your_package.main:main',
         ],
     },
 )
