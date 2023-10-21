@@ -1,6 +1,5 @@
 """Query the database"""
 
-import os
 import sqlite3
 from prettytable import PrettyTable
 
