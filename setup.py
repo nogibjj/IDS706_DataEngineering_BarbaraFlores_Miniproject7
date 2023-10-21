@@ -1,20 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ETLQueryTool",
-    version="0.1.0",
-    description="ETLpipline",
-    author="Barbara Flores",
-    packages=find_packages(),
+    name='my_tool',
+    version='0.1',
+    packages=['my_tool'],
     install_requires=[
-        "databricks-sql-connector",
-        "pandas",
-        "python-dotenv",
+        # Lista de tus dependencias aquí
     ],
     entry_points={
-        "console_scripts": [
-            "etl_query=main:main",
+        'console_scripts': [
+            'my-tool = my_tool.mi_script:main',
         ],
     },
 )
-
