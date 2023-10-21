@@ -1,15 +1,17 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='your-package-name',
+    name='etl-tool',
     version='0.1',
-    packages=['your_package'],
+    packages=find_packages(),
     install_requires=[
-        # List your dependencies here
+        'requests',
+        'prettytable',
+        # Add other dependencies here
     ],
     entry_points={
         'console_scripts': [
-            'your-command-name = your_package.main:main',
+            'your-command-name = main:main',
         ],
     },
 )
