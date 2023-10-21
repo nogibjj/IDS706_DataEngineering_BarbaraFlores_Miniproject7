@@ -19,27 +19,17 @@ def load(dataset="data/WorldSmall.csv"):
         conn = sqlite3.connect('data/WorldSmallDB.db')
         c = conn.cursor()
         c.execute("DROP TABLE IF EXISTS WorldSmallDB")
+        c.execute("CREATE TABLE WorldSmallDB (country, region, gdppcap08, polityIV)")
+        data = list(payload)  
         
-        # Modificar la creación de la tabla para incluir las nuevas columnas
-        c.execute("CREATE TABLE WorldSmallDB (country, region, gdppcap08, polityIV, country_upper, region_upper, gdppcap08_rank)")
 
-        # Insertar datos y las nuevas columnas
-        data = list(payload)  # Convertir el lector de CSV a una lista para facilitar la manipulación
-        
-        # Agregar columnas calculadas
         for idx, row in enumerate(data):
             country = row[0]
             region = row[1]
             gdppcap08 = row[2]
             polityIV = row[3]
             
-            # Agregar nuevas columnas
-            country_upper = country.upper()
-            region_upper = region.upper()
-            gdppcap08_rank = idx + 1  # Rango de mayor a menor basado en el índice de la fila
-
-            # Insertar los datos en la tabla
-            c.execute("INSERT INTO WorldSmallDB VALUES (?, ?, ?, ?, ?, ?, ?)", (country, region, gdppcap08, polityIV, country_upper, region_upper, gdppcap08_rank))
+            c.execute("INSERT INTO WorldSmallDB VALUES (?, ?, ?, ?)", (country, region, gdppcap08, polityIV))
 
         conn.commit()
         conn.close()

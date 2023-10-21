@@ -18,7 +18,7 @@ def update_region_column(cursor):
     print("\nColumn 'region' updated successfully.")
 
 def query():
-    conn = sqlite3.connect("/workspaces/IDS706_DataEngineering_BarbaraFlores_Miniproject5/data/WorldSmallDB.db")
+    conn = sqlite3.connect("/workspaces/IDS706_DataEngineering_BarbaraFlores_Miniproject7/data/WorldSmallDB.db")
     cursor = conn.cursor()
 
     print("\nLet's quickly review our database. Let's take a sample of how it is constructed.\n")
