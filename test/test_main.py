@@ -4,14 +4,14 @@ Test
 """
 import unittest
 import os
-from etltool.mylib.extract import extract
+from EtlTool.mylib.extract import extract
 
 class TestExtractFunction(unittest.TestCase):
 
     def test_extract(self):
 
         input_url = "https://raw.githubusercontent.com/nickeubank/practicaldatascience/master/Example_Data/world-small.csv"
-        output_file_path = "etltool/data/WorldSmall.csv"
+        output_file_path = "EtlTool/data/WorldSmall.csv"
 
         if os.path.exists(output_file_path):
             os.remove(output_file_path)
