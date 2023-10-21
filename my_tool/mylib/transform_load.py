@@ -5,24 +5,24 @@ import sqlite3
 import csv
 import os
 
-#load the csv file and insert into a new sqlite3 database
-
-def load(dataset="data/WorldSmall.csv"):
+def load(dataset="my_tool/data/WorldSmall.csv"):
     """Transforms and Loads data into the local SQLite3 database"""
 
-    #prints the full working directory and path
+    # Imprime el directorio de trabajo actual y la ruta completa
     print(os.getcwd())
 
     with open(dataset, 'r', encoding='utf-8', newline='') as file:
         payload = csv.reader(file, delimiter=',')
 
-        conn = sqlite3.connect('data/WorldSmallDB.db')
+        db_path = "my_tool/data/WorldSmallDB.db"
+        conn = sqlite3.connect(db_path)
         c = conn.cursor()
+
         c.execute("DROP TABLE IF EXISTS WorldSmallDB")
         c.execute("CREATE TABLE WorldSmallDB (country, region, gdppcap08, polityIV)")
-        data = list(payload)  
         
-
+        data = list(payload)
+        
         for _, row in enumerate(data):
             country = row[0]
             region = row[1]
