@@ -1,7 +1,5 @@
 from setuptools import setup, find_packages
 
-# make sure the etl script outputs properly
-
 setup(
     name="ETLQueryTool",
     version="0.1.0",
@@ -19,3 +17,4 @@ setup(
         ],
     },
 )
+
