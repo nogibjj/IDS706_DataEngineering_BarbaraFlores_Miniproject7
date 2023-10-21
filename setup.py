@@ -11,7 +11,7 @@ setup(
     },
     install_requires=[
         "requests",
-        "sqlite3",
+        #"sqlite3",
         "prettytable",
     ],
     author="Barbara Flores",

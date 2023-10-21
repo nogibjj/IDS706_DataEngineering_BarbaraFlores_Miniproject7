@@ -4,7 +4,7 @@ Test
 """
 import unittest
 import os
-from EtlTool.mylib.extract import extract
+from EtlTool.main import extract
 
 class TestExtractFunction(unittest.TestCase):
 
