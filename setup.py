@@ -7,11 +7,12 @@ setup(
     install_requires=[
         'requests',
         'prettytable',
-        # Add other dependencies here
+        # Agrega otras dependencias aquí
     ],
     entry_points={
         'console_scripts': [
-            'your-command-name = main:main',
+            'etl-tool = main:main',
         ],
     },
+    python_requires='>=3.6',
 )
