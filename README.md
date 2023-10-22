@@ -9,18 +9,19 @@ In this miniproject, the following activities were performed:
 
 1. Package a Python script with setuptools or a similar tool
 2. Include a user guide on how to install and use the tool
-3. Include communication with an external or internal database (NoSQL, SQL, etc) 
+3. Include communication with an external or internal database (NoSQL, SQL, etc)
 
 ## User Guide etl-tool 
 
-The "etl-tool" is a command-line utility that allows you to perform Extract, Transform, and Load (ETL) processes on [world-small.csv](https://raw.githubusercontent.com/sejdemyr/sejdemyr.github.io/master/r-tutorials/basics/data/world-small.csv) database
+This script is part of an Extract, Transform, Load (ETL) tool. It extracts data from a remote URL, transforms it, and loads it into a local SQLite database. The script provides functions for each ETL step, including extraction, transformation, and querying the database. It also includes functionality to update and query the loaded data. 
 
-This database was employed in the `"Practical Data Science"` class taught by Nick Eubank. This database contains information about some countries, their regions, and their values for `Polity IV` and `gdppcap08`.
+To run the complete ETL process, execute this script. It will perform the following steps:
+1. Extract data from a URL and save it as 'WorldSmall.csv' in the 'EtlTool/data' directory.
+2. Transform the extracted data and load it into a local SQLite database, creating the 'WorldSmallDB.db' file.
+3. Perform various queries on the loaded data and display the results.
 
-- The `polityIV` variable in this dataset is an expert score for a country's authoritarianism. Traditionally, values of -10 represent extreme autocracies, while values of 10 denote consolidated liberal democracies. However, in this dataset, they have been rescaled to range from 0 to 20, where 0 represents an extreme autocracy, and 20 represents a consolidated liberal democracy.
+The script is a part of a larger tool and can be used independently or as part of a broader data processing pipeline.
 
-- The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
-data. This tool simplifies interactions with external or internal databases (SQL, NoSQL, etc.) and is designed to streamline common ETL tasks.
 
 ### Table of Contents: 
 1. Requirements
