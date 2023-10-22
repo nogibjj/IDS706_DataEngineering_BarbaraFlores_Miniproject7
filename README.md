@@ -7,9 +7,9 @@ The objective of this miniproject is to package a Python command-line tool using
 
 In this miniproject, the following activities were performed:
 
-#### 1. Package a Python script with setuptools or a similar tool
-#### 2. Include a user guide on how to install and use the tool
-#### 3. Include communication with an external or internal database (NoSQL, SQL, etc) 
+1. Package a Python script with setuptools or a similar tool
+2. Include a user guide on how to install and use the tool
+3. Include communication with an external or internal database (NoSQL, SQL, etc) 
 
 ## User Guide etl-tool 
 
