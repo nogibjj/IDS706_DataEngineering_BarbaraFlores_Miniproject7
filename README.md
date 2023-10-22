@@ -11,7 +11,49 @@ In this miniproject, the following activities were performed:
 2. Include a user guide on how to install and use the tool
 3. Include communication with an external or internal database (NoSQL, SQL, etc)
 
-## User Guide etl-tool 
+## 🌳 Directory Tree
+This repository includes the following directory and file structure:
+
+```bash
+.
+├── Dockerfile
+├── EtlTool
+│   ├── __init__.py
+│   ├── data
+│   │   ├── WorldSmall.csv
+│   │   └── WorldSmallDB.db
+│   └── main.py
+├── EtlTool.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── entry_points.txt
+│   ├── requires.txt
+│   └── top_level.txt
+├── LICENSE
+├── Makefile
+├── README.md
+├── build
+│   ├── bdist.linux-x86_64
+│   └── lib
+│       ├── EtlTool
+│       │   ├── __init__.py
+│       │   └── main.py
+│       └── test
+│           ├── __init__.py
+│           └── test_main.py
+├── dist
+│   ├── EtlTool-0.1-py3-none-any.whl
+│   └── EtlTool-0.1.tar.gz
+├── requirements.txt
+├── setup.py
+├── setup.sh
+└── test
+    ├── __init__.py
+    └── test_main.py
+```
+
+## 📖 User Guide etl-tool 
 
 This script is part of an Extract, Transform, Load (ETL) tool. It extracts data from a remote URL, transforms it, and loads it into a local SQLite database. The script provides functions for each ETL step, including extraction, transformation, and querying the database. It also includes functionality to update and query the loaded data. 
 
@@ -54,4 +96,3 @@ Once installed, you can use the "etl-tool" from the command line. Here is an ove
 ```bash
 etl-tool
 ```
-
