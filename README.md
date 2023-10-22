@@ -41,15 +41,16 @@ To install the "etl-tool," follow these steps:
 2. Navigate to the repository location in your terminal.
 3. Run the following command to install "etl-tool":
 
-```python
+```bash
 pip install .
 ```
+
 This will install the tool and its dependencies in your virtual environment.
 
 ## Running the Tool
 Once installed, you can use the "etl-tool" from the command line. Here is an overview of how to use the tool:
 
-```python
+```bash
 etl-tool
 ```
 
