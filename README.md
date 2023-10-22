@@ -13,7 +13,14 @@ In this miniproject, the following activities were performed:
 
 ## User Guide etl-tool 
 
-The "etl-tool" is a command-line utility that allows you to perform Extract, Transform, and Load (ETL) processes on data. This tool simplifies interactions with external or internal databases (SQL, NoSQL, etc.) and is designed to streamline common ETL tasks.
+The "etl-tool" is a command-line utility that allows you to perform Extract, Transform, and Load (ETL) processes on [world-small.csv](https://raw.githubusercontent.com/sejdemyr/sejdemyr.github.io/master/r-tutorials/basics/data/world-small.csv) database
+
+This database was employed in the `"Practical Data Science"` class taught by Nick Eubank. This database contains information about some countries, their regions, and their values for `Polity IV` and `gdppcap08`.
+
+- The `polityIV` variable in this dataset is an expert score for a country's authoritarianism. Traditionally, values of -10 represent extreme autocracies, while values of 10 denote consolidated liberal democracies. However, in this dataset, they have been rescaled to range from 0 to 20, where 0 represents an extreme autocracy, and 20 represents a consolidated liberal democracy.
+
+- The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
+data. This tool simplifies interactions with external or internal databases (SQL, NoSQL, etc.) and is designed to streamline common ETL tasks.
 
 ### Table of Contents: 
 1. Requirements
