@@ -46,11 +46,9 @@ pip install .
 ```
 This will install the tool and its dependencies in your virtual environment.
 
-## Usage
+## Running the Tool
 Once installed, you can use the "etl-tool" from the command line. Here is an overview of how to use the tool:
 
-...
-## Running the Tool
 ```python
 etl-tool
 ```
