@@ -42,3 +42,10 @@ This will install the tool and its dependencies in your virtual environment.
 ## Usage
 Once installed, you can use the "etl-tool" from the command line. Here is an overview of how to use the tool:
 
+...
+## Running the Tool
+```python
+etl-tool
+```
+Enjoy using "etl-tool" for your ETL tasks! For more information, please refer to the detailed documentation in the project repository.
+
