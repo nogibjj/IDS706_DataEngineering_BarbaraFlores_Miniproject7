@@ -64,13 +64,6 @@ To run the complete ETL process, execute this script. It will perform the follow
 
 The script is a part of a larger tool and can be used independently or as part of a broader data processing pipeline.
 
-
-### Table of Contents: 
-1. Requirements
-2. Installation
-3. Usage
-4. Examples
-
 ## Requirements
 Ensure you have Python installed on your system. Additionally, this tool utilizes the following Python libraries, which will be automatically installed when following the installation instructions:
 
@@ -96,3 +89,5 @@ Once installed, you can use the "etl-tool" from the command line. Here is an ove
 ```bash
 etl-tool
 ```
+## Example Usage
+
