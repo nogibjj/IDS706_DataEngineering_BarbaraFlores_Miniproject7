@@ -15,15 +15,30 @@ In this miniproject, the following activities were performed:
 
 The "etl-tool" is a command-line utility that allows you to perform Extract, Transform, and Load (ETL) processes on data. This tool simplifies interactions with external or internal databases (SQL, NoSQL, etc.) and is designed to streamline common ETL tasks.
 
-Table of Contents
+### Table of Contents: 
 1. Requirements
 2. Installation
 3. Usage
 4. Examples
-5. Contact
 
-Requirements
+## Requirements
 Ensure you have Python installed on your system. Additionally, this tool utilizes the following Python libraries, which will be automatically installed when following the installation instructions:
 
 requests
 prettytable
+
+## Installation
+To install the "etl-tool," follow these steps:
+
+1. Clone this repository or download the package.
+2. Navigate to the repository location in your terminal.
+3. Run the following command to install "etl-tool":
+
+```python
+pip install .
+```
+This will install the tool and its dependencies in your virtual environment.
+
+## Usage
+Once installed, you can use the "etl-tool" from the command line. Here is an overview of how to use the tool:
+
