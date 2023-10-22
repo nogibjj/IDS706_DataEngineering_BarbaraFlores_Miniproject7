@@ -90,4 +90,9 @@ Once installed, you can use the "etl-tool" from the command line. Here is an ove
 etl-tool
 ```
 ## Example Usage
+This section provides a screenshot showcasing a typical example of how to use our module in action
+
+![ExampleUsage](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject7/main/images/ExampleUsage.png)
+
+
 
